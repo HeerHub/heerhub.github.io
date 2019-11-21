@@ -1,0 +1,176 @@
+    /*-------------------------------Footer Styling-------------------------------------------------- */
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+	
+    body {
+      /* Margin bottom by footer height */
+      margin-bottom: 4rem;
+    }
+    
+	
+    .footer {
+      position: absolute;
+      width: 100%;     
+      height: 4rem;   /* Set the fixed height of the footer here */
+      line-height: 4rem; /* Vertically center the text there */
+	  background-color:#ff9800;
+	  text-align: right;
+	  color: #fff; 
+	  padding-right: 2rem;
+	  bottom: 0;
+    }
+	
+	/*change year of footer copyright here*/
+    footer::after {
+	  content: "2019";
+	}
+    
+	/*-------------------------------Header Styling-------------------------------------------------- */
+	
+	.navbar .navbar-nav .nav-link {
+      color: #bfbdbd;   /*unselected link text colour*/
+      padding: 1rem 1rem; /*padding for height*/
+	}
+	
+	.navbar .nav-item.active .nav-link,
+	.navbar .nav-item:hover .nav-link {
+      color: #fff; /*current link text colour*/
+      background-color: #4f4f4f; /*active link background colour*/
+	  transition: 0.4s;
+	}
+	
+	.navbar {
+	  padding-left: 8rem;
+	  padding-top: 0rem;
+	  padding-bottom: 0rem;
+	  background-color: #292929;  /*navbar background colour*/
+	}
+	
+
+	
+	/*For Mobile Hamburger Menu*/
+	.navbar-toggler{
+	  margin-bottom: 0.5rem;
+	  margin-top: 0.5rem;
+	}
+	
+	@media only screen and (max-width : 768px) {
+      .navbar-collapse .nav-item.active .nav-link, 
+	  .navbar-collapse .nav-item:hover .nav-link{
+	  color: #fff;
+	  background-color: rgb(255, 255, 255, 0);}
+	}
+	
+	@media only screen and (max-width : 768px) {
+	  .navbar-collapse{
+	  padding-bottom: 0.5rem;}
+	}
+
+    /*Jumbotron Styling*/
+    .jumbotron{
+      padding-left: 8rem;
+	  padding-top: 2rem;
+	  padding-bottom: 8rem;
+      margin-bottom: 0; 
+      background-color: #ff9800; 
+      border-radius: 0rem;
+    }
+	
+	.jumbotron .h1, h1{
+		font-size: 2.5rem;
+	}
+	/*-------------------------------Content Styling-------------------------------------------------- */
+	
+	
+	/*Container Styling*/
+	.container-fluid{
+		padding-top:2rem;
+		padding-right: 20rem;
+		padding-left:15rem; 
+		padding-bottom:60px;
+	}
+	
+	@media only screen and (max-width : 1100px){
+		.container-fluid{
+		padding-top:30px;
+		padding-right: 10rem;
+		padding-left:10rem; 
+		padding-bottom:60px;
+	}
+	}
+	
+	/*container styling for mobile*/
+	@media only screen and (max-width : 768px) {
+		.navbar, 
+		.jumbotron,
+		.container-fluid{
+		padding-left: 1rem;
+		padding-left: 1rem;
+		padding-left: 1rem; padding-right: 1rem;}
+	}
+	
+
+	
+
+	/* responsively enforce wrapping */
+	.card-deck span{
+		  display: none;
+	}
+
+	
+	/*Card deck styling*/
+	@media (min-width:1200px){
+		.card-deck span:nth-of-type(5n) {
+		  display: block;
+		  width: 100%;
+		}
+		.container{
+			max-width: 1400px;
+		}		
+	}
+	@media (min-width:992px) and (max-width: 1199px) {
+	   .card-deck span:nth-of-type(4n) {
+		  display: block;
+		  width: 100%;
+		}
+		
+	}
+	@media (min-width:767px) and (max-width: 992px) {
+		.card-deck span:nth-of-type(3n) {
+		  display: block;
+		  width: 100%;
+		}
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		.card-deck span:nth-of-type(2n) {
+		  display: block;
+		  width: 100%;
+		}
+	}
+	
+	/*Makes card clickable using JS without breaking footers*/
+	.card[data-clickable=true]{
+	  cursor: pointer;
+	}
+	
+	/*Card styling*/
+	.card{
+		background-color: #e6e6e6;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
+		transition: transform .2s;
+	}
+	
+	/*Card fix for IE*/
+	.card-img-top {
+		 max-width: 100%
+		 flex-shrink: 0;
+	}
+	
+	/*Makes card inflate on hover*/
+	.card:hover{transform:scale(1.04);
+	
+	
+	
+	

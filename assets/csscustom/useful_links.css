@@ -1,0 +1,66 @@
+	
+	/*No idea what this does, but it stops the cards breaking*/
+	.card-deck span:nth-of-type(5n) {
+	  display: block;
+	  width: 0%;
+	}	
+   .card-deck span:nth-of-type(4n) {
+	  display: block;
+	  width: 0%;
+	}	
+	.card-deck span:nth-of-type(3n) {
+	  display: block;
+	  width: 0%;
+	}
+	.card-deck span:nth-of-type(2n) {
+	  display: block;
+	  width: 0%;
+	}
+		
+
+	
+	table th:nth-child(3), td:nth-child(3) {
+	  display: none;
+	}
+	
+	/*Flip card styling (remove background)*/
+	.card{
+	  width: 300px;
+	  height: 408px;
+	  perspective: 1000px;
+	  border: 0px;
+	  background-color: #fff;
+	  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.0), 0 15px 40px rgba(0, 0, 0, 0.0);
+	}
+
+	.card-inner {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.6s;
+	  transform-style: preserve-3d;
+	}
+
+	.card.active .card-inner {
+	  transform: rotateY(180deg);
+	}
+
+	.card img, .card-img-overlay {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;
+	  top:0;left:0;right:0;
+	}
+
+	.card-img-overlay {
+	  transform: rotateY(180deg);
+	  background:blue;
+	  color:white;
+	}
+	
+	
+	
+	/*Removes card hover inflate*/
+	.card:hover{transform:scale(1.00); 	
