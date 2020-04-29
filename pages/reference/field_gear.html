@@ -1,24 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152934290-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-152934290-1');
+	</script>
+	
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../assets/favicon.ico">
+	
+    <meta name="description" content="WW2 German Militaria Reference Guide">
+    <meta name="author" content="WebMaster Heerhub">
+	
+	<!--Favicons-->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="../../assets/favicons/site.webmanifest">
+	<link rel="mask-icon" href="../../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
     <title>HeerHub</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+    <link href="https://militariahub.github.io/index.html" rel="canonical">
 
     <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		
 	<!-- Custom CSS -->
 	<link href="../../assets/csscustom/stylesheet.css" rel="stylesheet">
-	
-
-
   </head>
 
   <body>
@@ -65,9 +82,9 @@
 			<li class="breadcrumb-item active" aria-current="page">Field Gear</li>
 		  </ol>
 		</nav>
-		<div class="card-deck">
-			<div class="card mb-4" data-clickable="true" data-href="#">
-				<img class="card-img-top" src="https://via.placeholder.com/700x400" alt="Card image cap">
+		<div class="card-deck" id="item_card"> <!--item_card id used so that css only applies to these cards in this deck-->
+			<div class="card mb-4" data-clickable="true" data-href="Field Gear/M1931 Kochgeschirr.html">
+				<img class="card-img-top" src="../../m31canteen.jpg" alt="Card image cap">
 				<div class="card-body">
 				  <h5 class="card-title">M1931 Kochgeschirr</h5>
 				</div>
@@ -176,8 +193,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script> 
 		$(document).ready(() => {
 		  $(document.body).on('click', '.card[data-clickable=true]', (e) => {
