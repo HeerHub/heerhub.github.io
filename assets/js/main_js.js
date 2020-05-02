@@ -1,12 +1,19 @@
-	$("#includedContent2").load("b.html", function(){
+	//////////////wa_list table fetching//////////////////	
+	
+	$("#wa_list_table_mobile").load("wa_list.html", function(){
 	  /// new html exists now
 	  $('#myTable').DataTable(/*options*/)
 	});
 	
-    $("#includedContent").load("b.html", function(){
+    $("#wa_list_table").load("wa_list.html", function(){
 	  /// new html exists now
 	  $('#myTable').DataTable(/*options*/)
 	});
+	
+	
+	
+	
+	//////////////Card deck clickable fix//////////////////	
 	
 	// Get card element
 	const card = document.querySelectorAll('.card');
@@ -24,7 +31,8 @@
 	
 
 
-
+	//////////////Scroll to top button//////////////////
+	
 	$(document).ready(function(){
 	// Should cache elements here for continuous access
 	const footer = $(".footer");
@@ -36,7 +44,7 @@
 			var distanceFromBottom = Math.floor($(document).height() - $(document).scrollTop() - $(window).height());
 			// Check to see if we're within the footer range
 			if ( distanceFromBottom <= footer.height() ) {
-					console.log(distanceFromBottom);
+					//console.log(distanceFromBottom);
 					scrollBtn.css("bottom", (footer.height() - distanceFromBottom) + padding);
 				} else {
 					scrollBtn.css("bottom", padding);

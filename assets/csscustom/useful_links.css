@@ -1,29 +1,26 @@
 	
-	/*No idea what this does, but it stops the cards breaking*/
-	.card-deck span:nth-of-type(5n) {
-	  display: block;
-	  width: 0%;
-	}	
-   .card-deck span:nth-of-type(4n) {
-	  display: block;
-	  width: 0%;
-	}	
-	.card-deck span:nth-of-type(3n) {
-	  display: block;
-	  width: 0%;
-	}
-	.card-deck span:nth-of-type(2n) {
-	  display: block;
-	  width: 0%;
-	}
-		
-
-	
+	/*wa list table styling?*/
 	table th:nth-child(3), td:nth-child(3) {
 	  display: none;
 	}
+			
+	/*container styling for mobile switches sooner OVERRIDES DEFAULT TO STOP JUMPING OF CARD DECK WIDTH*/
+	@media only screen and (max-width : 815px) {
+		.navbar, 
+		.jumbotron,
+		.container-fluid{
+		padding-left: 1rem;
+		padding-left: 1rem;
+		padding-left: 1rem; padding-right: 1rem;}
+	}	
 	
-	/*Flip card styling (remove background)*/
+	/***************Flip card styling and animation**********************/	
+	.card.book {
+		max-width: 300px;
+		min-width: 300px;
+		margin-bottom: 1.5rem;
+	}
+	
 	.card{
 	  width: 300px;
 	  height: 408px;
@@ -37,11 +34,11 @@
 	  position: relative;
 	  width: 100%;
 	  height: 100%;
-	  text-align: center;
+	  text-align: left;
 	  transition: transform 0.6s;
 	  transform-style: preserve-3d;
 	}
-
+	
 	.card.active .card-inner {
 	  transform: rotateY(180deg);
 	}
@@ -56,11 +53,25 @@
 
 	.card-img-overlay {
 	  transform: rotateY(180deg);
-	  background:blue;
+	  background:#444c43;
 	  color:white;
 	}
 	
+	/*adjust font size etc for title of book*/
+	.card-title {
+		text-align: center;
+		font-size: 1.75rem;
+	}
+		
+	/*adjust font size etc for info text of book*/
+	.info{
+		font-size: 0.95rem;
+	}
 	
-	
+	/*adjust font size etc for other details of book (isbn, author, etc)*/
+	.isbn {
+		text-align: left;
+	}	
+		
 	/*Removes card hover inflate*/
 	.card:hover{transform:scale(1.00); 	
