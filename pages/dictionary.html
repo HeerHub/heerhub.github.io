@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152934290-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-152934290-1');
+	</script>
+	<script>
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /* Loop through a collection of all HTML elements: */
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+		elmnt = z[i];
+		/*search for elements with a certain atrribute:*/
+		file = elmnt.getAttribute("w3-include-html");
+		if (file) {
+		  /* Make an HTTP request using the attribute value as the file name: */
+		  xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+			if (this.readyState == 4) {
+			  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			  /* Remove the attribute, and call this function once more: */
+			  elmnt.removeAttribute("w3-include-html");
+			  includeHTML();
+			}
+		  }
+		  xhttp.open("GET", file, true);
+		  xhttp.send();
+		  /* Exit the function: */
+		  return;
+		}
+	  }
+	}
+	</script>
+	<script>
+	includeHTML();
+	</script>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="WW2 German Militaria Reference Guide">
+    <meta name="author" content="WebMaster Heerhub">
+	
+	<!--Favicons-->
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="../assets/favicons/site.webmanifest">
+	<link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+
+    <title>HeerHub</title>
+
+    <link href="https://militariahub.github.io/index.html" rel="canonical">
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/csscustom/stylesheet.css">	
+  </head>
+
+  <body>
+	<!--HEADER-->
+	<div w3-include-html="header.html"></div>
+
+		
+    <!--PAGE CONTENT-->	
+	<div class="container-fluid">
+	  <h2>Beginners Dictionary</h2>
+	  <p><em>A list of all the acronyms and words used by collectors</em></p>
+	  <div style="margin-bottom: 1.5rem; font-size: 1.2rem; line-height: 2.2rem;">
+		<a href="#C1"><i class="fas fa-arrow-right"></i> Acronyms</a>
+		<br/>
+		<a href="#C2"><i class="fas fa-arrow-right"></i> Words</a>
+	  </div>
+	  
+	  <div class="d-lg-none">hide on screens wider than lg</div>
+	  <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+
+
+	  <p style="margin-bottom: 4rem"><b>Use the links above to jump to the section of the page you need.</b></p>
+		<!--Acronym table-->
+		<h3 id="C1">Acronyms</h3>
+		  <table class="table mt-4 table d-none d-md-block">
+			<thead>
+			  <tr>
+				<th>Acronym</th>
+				<th>Stands For</th>
+				<th>Definition</th>
+			  </tr>
+			</thead>
+			<tbody>	
+			  <tr>
+				<td><a href="https://en.wikipedia.org/wiki/Reichszeugmeisterei" target="_blank">RZM</a></td>
+				<td><b>R</b>eich<b>z</b>eug<b>m</b>eisterei</td>				
+				<td>Was responsible for the central supply of all kinds of uniforms, uniform parts and equipment to members of Nazi organizations. A license could be purchased by a manufcaturer, 
+				All pieces of equipment had to be labelled with a visible RZM copyright protection symbol and a product-assigned RZM number that contained encoded data about the textile sector, 
+				material group, producer number and year of production. </td>
+			  </tr>
+			  <tr>
+				<td><a href="http://www.warrelics.eu/forum/" target="_blank">War Relics Forum</a></td>
+				<td><b>O</b>ne <b>T</b>wo <b>T</b>hree.</td>				
+				<td>A good forum for all sorts of topics, not just German militaria. Tom's website is one of the best for</td>
+			  </tr>
+			  <tr>
+				<td><a href="https://en.wikipedia.org/wiki/Reichszeugmeisterei" target="_blank">RZM</a></td>
+				<td><b>R</b>eich<b>z</b>eug<b>m</b>eisterei</td>				
+				<td>Was responsible for the central supply of all kinds of uniforms, uniform parts and equipment to members of Nazi organizations. A license could be purchased by a manufcaturer, 
+				All pieces of equipment had to be labelled with a visible RZM copyright protection symbol and a product-assigned RZM number that contained encoded data about the textile sector, 
+				material group, producer number and year of production. </td>
+			  </tr>
+			  <tr>
+				<td><a href="https://en.wikipedia.org/wiki/Reichszeugmeisterei" target="_blank">RZM</a></td>
+				<td><b>R</b>eich<b>z</b>eug<b>m</b>eisterei</td>				
+				<td>Was responsible for the central supply of all kinds of uniforms, uniform parts and equipment to members of Nazi organizations. A license could be purchased by a manufcaturer, 
+				All pieces of equipment had to be labelled with a visible RZM copyright protection symbol and a product-assigned RZM number that contained encoded data about the textile sector, 
+				material group, producer number and year of production. </td>
+			  </tr>
+			  <tr>
+				<td><a href="https://en.wikipedia.org/wiki/Reichszeugmeisterei" target="_blank">RZM</a></td>
+				<td><b>R</b>eich<b>z</b>eug<b>m</b>eisterei</td>				
+				<td>Was responsible for the central supply of all kinds of uniforms, uniform parts and equipment to members of Nazi organizations. A license could be purchased by a manufcaturer, 
+				All pieces of equipment had to be labelled with a visible RZM copyright protection symbol and a product-assigned RZM number that contained encoded data about the textile sector, 
+				material group, producer number and year of production. </td>
+			  </tr>			  
+			</tbody>
+		  </table>
+		<!--Word table-->
+		<h3 id="C2">Words</h3>
+		  <table class="table mt-4">
+			<thead>
+			  <tr>
+				<th>Word</th>
+				<th>Definition</th>
+			  </tr>
+			</thead>
+			<tbody>	
+			  <tr>
+				<td><a href="http://mp44.nl" target="_blank">MP44</a></td>
+				<td>Tom's website is one of the best for WW2 German field gear, a great website to have a look around.</td>
+			  </tr>
+			  <tr>
+				<td><a href="http://www.warrelics.eu/forum/" target="_blank">War Relics Forum</a></td>
+				<td>A good forum for all sorts of topics, not just German militaria.</td>
+			  </tr>	
+			  <tr>
+				<td><a href="http://www.warrelics.eu/forum/" target="_blank">War Relics Forum</a></td>
+				<td>A good forum for all sorts of topics, not just German militaria.</td>
+			  </tr>	
+			  <tr>
+				<td><a href="http://www.warrelics.eu/forum/" target="_blank">War Relics Forum</a></td>
+				<td>A good forum for all sorts of topics, not just German militaria.</td>
+			  </tr>	
+			  <tr>
+				<td><a href="http://www.warrelics.eu/forum/" target="_blank">War Relics Forum</a></td>
+				<td>A good forum for all sorts of topics, not just German militaria.</td>
+			  </tr>	
+			  <tr>
+				<td><a href="http://www.warrelics.eu/forum/" target="_blank">War Relics Forum</a></td>
+				<td>A good forum for all sorts of topics, not just German militaria.</td>
+			  </tr>				  
+			</tbody>
+		  </table>
+	</div>
+
+	<!--FOOTER-->
+	<footer class="footer">Copyright </footer>
+
+    <!-- Bootstrap core JavaScript-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

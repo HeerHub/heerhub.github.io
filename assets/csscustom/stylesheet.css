@@ -31,6 +31,9 @@
 	
 	
 	/*-------------------------------Header Styling-------------------------------------------------- */	
+	
+
+	
 	.navbar .navbar-nav .nav-link {
       color: #bfbdbd;   /*unselected link text colour*/
       padding: 1rem 1rem; /*padding for height*/
@@ -63,6 +66,12 @@
 	.navbar-toggler{
 	  margin-bottom: 0.5rem;
 	  margin-top: 0.5rem;
+	}
+	
+	.navbar-toggler:focus,  /* this is used to disable the orange colour on :focus (mobile select) which by default is -webkit-focus-ring-color which is #E597000 */
+	.navbar-toggler:active,
+	.navbar-toggler-icon:focus {
+		outline: none;
 	}
 	
 	@media only screen and (max-width : 768px) {
